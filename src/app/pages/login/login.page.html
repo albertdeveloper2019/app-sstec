@@ -1,0 +1,45 @@
+<ion-content padding>
+
+  <h1 class="MarginH1"> Iniciar sesión <ion-icon style="float: right" ios="ios-log-out" md="md-log-out" (click)= "cerrarLogin()"></ion-icon> </h1> 
+  <form #formulario="ngForm">
+  
+          <ion-list class="MarginList">   
+            <ion-item>
+                <ion-icon name="mail"></ion-icon> 
+                <ion-input type="email"
+                           clearInput value="" 
+                           class="MarginInput"
+                           name="email"
+                           pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                           [(ngModel)]="dataMail"
+                           required>
+                </ion-input>
+            </ion-item>
+      
+            <ion-item>
+                <ion-icon name="lock"></ion-icon> 
+                <ion-input type="password"
+                           name="password"
+                           [(ngModel)]="dataKey"
+                           required>
+                </ion-input>
+            </ion-item>
+          </ion-list>
+          <ion-button expand="full" type="submit"
+                      class="MarginButton" text-capitalize expand="full" 
+                      (click)="validarUsuario()"
+                      [disabled]="formulario.invalid">
+                      Iniciar sesión
+                  <ion-spinner 
+                  *ngIf="mostrar"
+                  name="bubbles"></ion-spinner>
+          </ion-button>
+  
+          <ion-label class="MarginLabel" color="dark">¿No tienes cuenta? 
+                  <a class="hrefLink" (click)="llamarRegistro()">Crear Cuenta</a>
+          </ion-label>
+        </form>
+               
+  </ion-content>
+  
+  

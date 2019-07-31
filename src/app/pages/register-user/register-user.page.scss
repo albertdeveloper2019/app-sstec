@@ -1,0 +1,45 @@
+ion-content{
+    --ion-background-color: white;
+}
+
+ion-input{
+    --placeholder-size: 5px;
+    --placeholder-opacity: 1;
+}
+
+ion-button {
+    --background: rgb(19, 55, 216); 
+}
+
+.MarginH3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.MarginList{
+    margin-top: 40px;
+}
+
+.MarginButton{
+    margin-top: 30px;
+}
+
+.MarginCheckBox{
+    text-align: center;
+    font-size: 11px;
+    color: black;
+}
+
+.MarginCheckBox2{
+    margin-right: 10px;
+    color: black;
+}
+
+.MarginInput{
+    text-align: start;
+    margin-left: 10px;
+}
+
+.ios ion-back-button {
+    --color: #ffffff;
+}

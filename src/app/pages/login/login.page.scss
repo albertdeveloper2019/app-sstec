@@ -1,0 +1,54 @@
+ion-content{
+    --ion-background-color:white;
+ }
+
+ ion-row{
+     --ion-background-color:white;
+ }
+ ion-button {
+     --background: rgb(19, 55, 216);
+     
+ }
+ 
+ ion-spinner {
+     margin-left: 10px;
+ }
+ 
+ .hrefLink{
+     text-decoration: underline;
+     color:rgb(19, 55, 216);
+ }
+ 
+ .MarginH1{
+     margin-top: 10px;
+     text-align: center;
+     color: rgb(9, 10, 10);
+ }
+ 
+ .MarginButton{
+     margin-top: 40px;
+     margin-bottom: 20px
+ }
+ 
+ .MarginLabel{
+     margin-top: 30px;
+     margin: auto;
+     text-align: center;
+     display: block;
+ }
+ 
+ .MarginList{
+     margin-top: 40px;
+     margin-bottom: 20px;
+ }
+ 
+ .MarginInput{
+     text-align: start;
+     margin-left: 10px;
+     background: #ffffff;
+ }
+ 
+ .ios ion-back-button {
+     --color: #ffffff;
+ }
+ 
